@@ -183,7 +183,152 @@
 // console.log (num1);
 
 // let arr = []; 
-// for (let i = 0; i < 5, i++) {
+// for (let i = 0; i < 5; i++) {
 //     arr.push (Number(prompt('Enter number')));
 // }
 // console.log (arr);
+
+
+//      ОБЬЕКТЫ
+// let user = {
+//     name: 'John', 
+//     age:30, 
+//     'likes car': true} // обьявили обьект
+// console.log (user);
+// console.log(user.name);
+
+// user.isAdmin=true; // новое свойство обьекта
+// console.log (user);
+
+// delete user.name; // удалили свойство
+// console.log (user); 
+
+// const cars = {}; // = let cars 
+
+// console.log(user["likes car"]); // если свойство из неск слов то скобки надо
+
+// user['likes birds'] = false;
+// console.log (user.age, user["likes car"], user.name); 
+
+// // ЦИКЛ for in
+// for (let key in user){ // 
+//     console.log(key); // вывод ключей
+//     console.log (user[key]); // только значения
+// }
+
+// user.age= 100; // ввели новое значение свойства
+
+// let user = {
+//     name : 'John',
+//     surname : 'SMith', 
+
+// }
+// user.name = Pete;
+// delete user.name;
+
+// let codes= {
+//     '49': 'Germany',
+//     '48': 'Swiss',
+//     '41': 'GB',
+// }
+// for (let key in codes){
+//     // console.log (codes[key]) выводятся значения по возрастанию
+
+// }
+
+// let codes1= {
+//     '+49': 'Germany',
+//     '+41': 'GB',
+//     '+48': 'Swiss',
+    
+// }
+// for (let key in codes1){
+//     console.log (codes1[key]) //выводятся значения по порядку 
+
+// }
+
+// console.log ('name' in user); проверяем есть ли такой ключ в обьекте
+
+// сумма элементов массива
+// let numbers = [100, -15, 0, 200, -25, 55, 0];
+// let sum = 0;
+//  for (let index = 0; index < numbers.length; index++) {
+//     sum = sum + numbers[index];  
+//  }
+// console.log (numbers);
+// console.log (sum);
+
+// ВЫВОД СУММЫ ВСЕХ ЭЛЕМЕНТОВ (ключей )ЦИКЛОМ FOR - IN 
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+// }
+// let sum=0;
+// for (const key in salaries) {
+     
+//         sum = salaries[key]+sum
+
+//     }
+//     console.log(sum);
+
+
+// ФУНКЦИИ - типа метода в Джава
+
+// function showMessage (){
+//     console.log('Hello');
+// }
+// showMessage(); // не надо ничего больше писать, вызывается функция
+
+
+//  а вот тут функция принимает на входе аргумент или несколько
+// можно вводить с терминала переменные их подавать на вход
+// function showMessage (userName, age){
+//     console.log ('Hello '+ userName + age);
+// }
+// showMessage('anya');
+
+//  let firstName=prompt('Enter nasme');
+//  let age=prompt('Enter age');
+// showMessage (firstName, age);
+
+// Переменная видна только внутри функции
+//____________________________________________________________
+// Обращение к функции которая на вход просит параметры
+// function sum (num1, num2){
+//     let sum= num1+num2;
+//     console.log (sum); // просто вывод на экран
+//     return num1+num2; //  а вот это возврат суммы на выход, после этого все игнорируется
+// }
+// // а вот так снаружи функции мы оперируем с результатом ее работы
+// let result = sum (3, 300);
+// let result2 = sum (33, 300);
+// console.log (result, result2);
+
+// Испорльзование функций 
+// function checkAge (age) {
+//     if (age>18){
+//         return true;
+//     }
+//     return false;
+// }
+// let age = Number (prompt ('How old r u'));
+// if (checkAge(age)){ // имеется в виду что функция вернула ТРУЕ
+//     console.log('Access granted');}
+//     else { // имеется в виду что функция вернула ФАЛЬСЕ
+//         console.log('Access NOT');
+//     }
+
+//Объявить функцию, которая считывает значение через
+ //prompt и выводит “ДА” если число четное и “НЕТ” в ином случае.
+// function min (a){
+//     if ((a%2)==0) {
+//         console.log ('yes');
+//     } else {
+
+//     console.log ('no');}
+// }
+
+// let a=Number (prompt('Enter num'));
+// min(a);
+// ___________________________________________________
